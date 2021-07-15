@@ -1,0 +1,36 @@
+@use '../util/functions.scss' as *;
+
+.entry-text {
+  flex-direction: column;
+
+  &__wrapper{
+    text-align: center;
+    width: 32.25rem;
+    margin: rem(75) 0;
+  }
+
+  &__tagline {
+    text-transform: uppercase;
+    letter-spacing: rem(1.2);
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  &__divider {
+    background-color:  var(--gold);
+    width: 3px;
+    height: rem(50);
+    margin: 0 auto;
+  }
+
+  &__info {
+    font-weight: 400;
+    color: var(--gray);
+    margin-top: rem(40);
+  }
+  h2 {
+    margin-bottom: rem(20);
+    font-size: rem(38);
+  }
+}
+

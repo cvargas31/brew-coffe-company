@@ -5,30 +5,77 @@
   width: 100%;
   background-color: var(--black);
   height: rem(40);
+  font-size: rem(14);
+
+  &__wrapper {
+    height: 100%;
+  }
+
+  &__info {
+    color: white;
+    letter-spacing: rem(1.6);
+    margin-right: rem(60);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+
+
+    &:hover {
+      color: var(--gold);
+    }
+  }
+
+  &__icons {
+    margin-right: rem(60);
+    letter-spacing: rem(1.6);
+
+    .phone {
+      margin-right: rem(60);
+
+      .fa-mobile-alt {
+        margin-right: rem(8);
+      }
+    }
+  }
+
+  a {
+    color: white;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      color: var(--gold);
+    }
+  }
+
 }
 
 
 .header {
-  height: rem(120);
+  height: rem(80);
   width: 100%;
   margin-top: rem(16);
-
+  margin-bottom: rem(16);
 
   &__logo {
     img {
-      height: rem(120);
+      height: rem(80);
     }
   }
 
   &__links {
-    flex: 0.2;
+    flex: 0.3;
     justify-content: space-evenly;
     list-style: none;
     letter-spacing: rem(2);
-    font-weight: 500;
+    font-weight: 400;
   }
 
   a {
     color: var(--blackish);
+    transition: all 0.1s ease-out;
+
+    &:hover {
+      color: var(--gold);
+    }
   }
 }
+

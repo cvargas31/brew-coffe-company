@@ -4,40 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brew Coffe Company Panama</title>
+    <title>Brew Coffee Company Panama</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script defer src="/dist/script.js"></script>
   </head>
   <body>
     <div class="topbar">
-      <span></span>
+      <div class="topbar__wrapper flex flex-jc-fe flex-ai-c">
+        <span class="topbar__info"
+          ><a
+            href="https://www.google.com/maps/place/Brew+Coffee+Company/@8.9980276,-79.5055672,17z/data=!3m1!4b1!4m5!3m4!1s0x8faca958b8d4b6b5:0xc83de178a38ed724!8m2!3d8.9980276!4d-79.5033785"
+            target="_blank"
+            ><i class="fas fa-map-marker-alt"></i> Brew Coffee Company, Panama
+            City</a
+          ></span
+        >
+        <div class="topbar__icons">
+          <a href="https://wa.me/+50764388657" target="_blank" class="phone"
+            ><i class="fas fa-mobile-alt"></i>+507 6552-4231</a
+          >
+          <a
+            href="https://www.instagram.com/brewcoffeecompanypty/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/brewcoffeecompanypty/"
+            target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+        </div>
+      </div>
     </div>
     <header class="header">
       <nav>
         <div class="flex flex-jc-c header__container">
           <ul class="header__links flex flex-ai-c">
             <li><a href="">Home</a></li>
-            <li><a href="">Menu</a></li>
+            <li><a href="">Reserva</a></li>
           </ul>
           <div class="nav-logo">
             <a href="#" class="header__logo"
-              ><img
-                src="./images/logo2.png"
-                alt="Brew Coffe Company Panama"
+              ><img src="./images/logo2.png" alt="Brew Coffe Company Panama"
             /></a>
           </div>
           <ul class="header__links flex flex-ai-c">
-            <li><a href="">Reserva</a></li>
+            <li><a href="">Menu</a></li>
             <li><a href="">Encuentranos</a></li>
           </ul>
         </div>
       </nav>
     </header>
+    <main>
+      <div class="hero">
+        <div class="hero__image">
+          <div class="hero__overlay">
+            <h1>Incredible food and heavenly coffee</h1>
+            <p>
+              – The Culinaire Restaurant Guide –
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-text flex flex-jc-c flex-ai-c">
+        <div class="entry-text__wrapper">
+          <p class="entry-text__tagline">Porque Amamos el cafe</p>
+          <h2>Sobre Nosotros</h2>
+          <div class="entry-text__divider"></div>
+          <p class="entry-text__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nam quod nobis adipisci eum assumenda cum beatae magni voluptas recusandae error!</p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src="./images/david-fanuel-FTkd671TBt8-unsplash.jpg" class="gallery__img" alt="Image 1">
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src="./images/119189626_3197957246978459_6331490214803140015_n.jpg" class="gallery__img" alt="Image 2">
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src="./images/189827109_936871956855452_8465850403390502737_n.jpg" class="gallery__img" alt="Image 3">
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src="./images/192636088_114498560725617_5046297284492749118_n.jpg" class="gallery__img" alt="Image 4">
+        </figure>
+      </div>
+
+      <div class="entry-text flex flex-jc-c flex-ai-c">
+        <div class="entry-text__wrapper">
+          <p class="entry-text__tagline">LITTE SIPS</p>
+          <h2>Coffee Bar</h2>
+        </div>
+      </div>
+
+    </main>
   </body>
 </html>
