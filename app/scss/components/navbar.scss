@@ -1,0 +1,34 @@
+@use '../util/functions.scss' as *;
+
+
+.topbar {
+  width: 100%;
+  background-color: var(--black);
+  height: rem(40);
+}
+
+
+.header {
+  height: rem(120);
+  width: 100%;
+  margin-top: rem(16);
+
+
+  &__logo {
+    img {
+      height: rem(120);
+    }
+  }
+
+  &__links {
+    flex: 0.2;
+    justify-content: space-evenly;
+    list-style: none;
+    letter-spacing: rem(2);
+    font-weight: 500;
+  }
+
+  a {
+    color: var(--blackish);
+  }
+}
