@@ -1,15 +1,15 @@
 @use '../util/functions.scss' as *;
 
 .coffe-menu {
-  width: 95%;
+  width: min(95%, 100rem);
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
+  // grid-template-columns: 1fr 2fr;
+  // grid-template-rows: auto;
   grid-auto-flow: column;
   background-color: #f7f2ee;
 
   &__left {
-    margin: 0px 0px 64px 64px;
+    margin: 0 0 rem(64) rem(32);
 
     &__header {
       text-align: left;
@@ -32,13 +32,11 @@
         &__wrapper {
           display: flex;
           width: 100%;
-          // border: 1px solid blue;
           justify-content: space-between;
 
           &__size {
             margin-left: 50%;
             width: 50%;
-            // border: 1px solid red;
             font-size: rem(12);
             font-weight: 400;
             letter-spacing: rem(0.8);
@@ -48,7 +46,6 @@
           }
 
           &__title {
-            // border: 1px solid green;
             width: 50%;
             margin: rem(5);
             text-transform: uppercase;
@@ -58,7 +55,6 @@
           }
 
           &__price {
-            // border: 1px solid red;
             font-weight: 600;
             color: var(--lightgray);
             width: 50%;
@@ -72,42 +68,157 @@
   }
 
   &__right {
-    margin: 0px 0px 64px 64px;
+    background-color: var(--blackish);
+    margin: 3rem 1rem 3rem 3rem;
+    padding-left: 1rem;
+    height: fit-content;
+    padding-bottom: rem(32);
 
     &__header {
-      background-color: var(--gray) ;
       text-align: left;
       text-transform: uppercase;
-      color: white;
+      color: var(--gray);
       font-size: rem(24);
-      margin-top: rem(64);
-      padding: rem(20);
+      margin-bottom: rem(16);
+      padding-top: rem(32);
+      color: white;
+    }
+
+    &__box {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+
+      &__left-column {
+        width: 50%;
+
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          padding-right: rem(32);
+          color: white;
+          margin-bottom: rem(16);
+          font-weight: 600;
+          letter-spacing: rem(1);
+
+          &__price {
+            color: var(--darkwhite);
+          }
+        }
+      }
+
+      &__right-column {
+        width: 50%;
+
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 rem(32);
+          color: white;
+          margin-bottom: rem(16);
+          font-weight: 600;
+          letter-spacing: rem(1);
+
+          &__price {
+            color: var(--darkwhite);
+          }
+        }
+      }
+    }
+
+    &__bottom-box {
+      width: 50%;
+      color: white;
+      font-size: rem(12);
+      margin-top: rem(16);
+      font-weight: 300;
     }
   }
 }
 
-// .coffe-menu {
+.coffe-menu-2 {
+  margin: rem(40) auto;
+  width: min(95%, 100rem);
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: rem(20);
+  // grid-template-columns: repeat(3, 33%);
 
-//   &__right {
-//     margin: 0px 0px 64px 64px;
+  &__left {
 
-//     &__header {
-//       background-color: var(--gray) ;
-//       text-align: left;
-//       text-transform: uppercase;
-//       color: var(--gray);
-//       font-size: rem(24);
-//       margin-top: rem(64);
-//     }
-//   }
-// }
+    &__header {
+      font-weight: 600;
+      font-size: rem(24);
+      color: var(--gold);
+    }
 
-// .coffe-menu__righ__header{
-//      background-color: var(--gray) ;
-//       text-align: left;
-//       text-transform: uppercase;
-//       color: var(--gray);
-//       font-size: rem(24);
-//       margin-top: rem(64);
-//       color: white;
-// }
+    &__item {
+      padding-right: rem(20);
+
+      &__name {
+        text-transform: uppercase;
+        color: var(--gray);
+        font-weight: 600;
+        letter-spacing: rem(1);
+
+        p{
+          font-size: rem(12);
+          font-weight: 300;
+        }
+      }
+      &__price {
+        font-weight: 600;
+        color: var(--lightgray);
+        font-size: rem(18);
+      }
+    }
+  }
+
+  &__center {
+      
+    &__item {
+      padding-right: rem(20);
+
+      &__name {
+        text-transform: uppercase;
+        color: var(--gray);
+        font-weight: 600;
+        letter-spacing: rem(1);
+
+        p{
+          font-size: rem(12);
+          font-weight: 300;
+        }
+      }
+      &__price {
+        font-weight: 600;
+        color: var(--lightgray);
+        font-size: rem(18);
+      }
+    }
+  }
+
+  &__right {
+
+    &__item {
+      padding-right: rem(20);
+
+      &__name {
+        text-transform: uppercase;
+        color: var(--gray);
+        font-weight: 600;
+        letter-spacing: rem(1);
+
+        p{
+          font-size: rem(12);
+          font-weight: 300;
+        }
+      }
+      &__price {
+        font-weight: 600;
+        color: var(--lightgray);
+        font-size: rem(18);
+      }
+    }
+  }
+}
