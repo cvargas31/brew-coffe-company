@@ -5,7 +5,7 @@
   margin: rem(40) auto;
   width: min(95%, 115rem);
   display: grid;
-  grid-auto-flow: row;
+  grid-auto-flow: column;
   column-gap: rem(20);
 
   &__left-column{
