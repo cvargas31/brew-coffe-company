@@ -7,9 +7,9 @@
   // grid-template-rows: auto;
   grid-auto-flow: column;
   background-color: #f7f2ee;
-
+  padding: rem(20);
   &__left {
-    margin: 0 0 rem(64) rem(32);
+    // margin: 0 0 rem(64) rem(32);
 
     &__header {
       text-align: left;
@@ -69,10 +69,12 @@
 
   &__right {
     background-color: var(--blackish);
-    margin: 3rem 1rem 3rem 3rem;
     padding-left: 1rem;
     height: fit-content;
     padding-bottom: rem(32);
+    padding-left: rem(25);
+    margin-top: rem(50);
+    margin-left: rem(50);
 
     &__header {
       text-align: left;

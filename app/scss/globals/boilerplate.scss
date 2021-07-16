@@ -17,6 +17,12 @@ figure {
   margin: 0;
 }
 
+// Text Alignment
+
+.text-ac{
+  text-align: center;
+}
+
 // flexbox
 
 .flex {
@@ -24,6 +30,10 @@ figure {
 
   &-jc-sb {
     justify-content: space-between;
+  }
+
+  &-jc-se {
+    justify-content: space-evenly;
   }
 
   &-jc-fe {
@@ -36,5 +46,9 @@ figure {
 
   &-ai-c {
     align-items: center;
+  }
+
+  &-fd-c{
+    flex-direction: column;
   }
 }

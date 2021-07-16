@@ -1,0 +1,60 @@
+@use '../util/functions.scss' as *;
+
+.column-grid-2 {
+
+  margin: rem(40) auto;
+  width: min(95%, 115rem);
+  display: grid;
+  grid-auto-flow: row;
+  column-gap: rem(20);
+
+  &__left-column{
+    background-image: url(../../../images/Coffe-shop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  &__right-column{
+    border: 3px solid var(--gold);
+
+    &__text {
+      margin: rem(30);
+      font-weight: 400;
+      color: var(--blueish);
+      font-size: rem(18);
+      text-transform: capitalize;
+
+      h4{
+        color: var(--gray);
+        font-size: rem(32);
+        margin-bottom: 20px;
+      }
+
+      .horario{
+        color: var(--gray);
+        font-size: rem(32);
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+    }
+
+    &__buttons{
+
+      &__btn-1{
+        background-color: var(--blueish);
+        padding: 10px 16px;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        transition: all 0.1s ease-in;
+
+        &:hover{
+          background-color: var(--gold);
+        }
+      }
+    }
+  } 
+}
