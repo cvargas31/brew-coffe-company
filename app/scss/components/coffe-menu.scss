@@ -1,15 +1,19 @@
 @use '../util/functions.scss' as *;
 
+
 .coffe-menu {
   width: min(95%, 100rem);
   display: grid;
-  // grid-template-columns: 1fr 2fr;
-  // grid-template-rows: auto;
   grid-auto-flow: column;
   background-color: #f7f2ee;
   padding: rem(20);
+
+
+  @media screen and (max-width: 768px) {
+    grid-auto-flow: row;
+  }
+
   &__left {
-    // margin: 0 0 rem(64) rem(32);
 
     &__header {
       text-align: left;
@@ -74,7 +78,18 @@
     padding-bottom: rem(32);
     padding-left: rem(25);
     margin-top: rem(50);
-    margin-left: rem(50);
+    margin-left: rem(35);
+
+    @media screen and (max-width: 1024px) {
+      font-size: rem(14);
+
+    }
+
+
+    @media screen and (max-width: 768px) {
+      padding: rem(16);
+      margin-left: 0;
+    }
 
     &__header {
       text-align: left;
@@ -91,8 +106,16 @@
       width: 100%;
       flex-direction: row;
 
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
       &__left-column {
         width: 50%;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
 
         &__item {
           display: flex;
@@ -103,6 +126,10 @@
           font-weight: 600;
           letter-spacing: rem(1);
 
+          @media screen and (max-width: 768px) {
+            padding-right: 0;
+          }
+
           &__price {
             color: var(--darkwhite);
           }
@@ -112,14 +139,23 @@
       &__right-column {
         width: 50%;
 
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
         &__item {
           display: flex;
           justify-content: space-between;
-          padding: 0 rem(32);
+          padding-right: rem(16);
           color: white;
           margin-bottom: rem(16);
           font-weight: 600;
           letter-spacing: rem(1);
+
+          @media screen and (max-width: 768px) {
+            padding: 0;
+
+          }
 
           &__price {
             color: var(--darkwhite);
@@ -134,6 +170,7 @@
       font-size: rem(12);
       margin-top: rem(16);
       font-weight: 300;
+
     }
   }
 }
@@ -146,6 +183,10 @@
   column-gap: rem(20);
   // grid-template-columns: repeat(3, 33%);
 
+  @media screen and (max-width: 768px) {
+    grid-auto-flow: row;
+  }
+
   &__left {
 
     &__header {
@@ -156,6 +197,7 @@
 
     &__item {
       padding-right: rem(20);
+
 
       &__name {
         text-transform: uppercase;

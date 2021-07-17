@@ -5,14 +5,26 @@
   margin: rem(40) auto;
   width: min(95%, 115rem);
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
   column-gap: rem(20);
+
+  @media screen and (max-width:768px) {
+    column-gap: 0; 
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: row;
+    width: min(95%,111rem);
+  }
 
   &__left-column{
     background-image: url(../../../images/Coffe-shop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
+
+    @media screen and (max-width:768px) {
+      height: 50vh;
+    }
   }
 
   &__right-column{
