@@ -119,7 +119,7 @@
       z-index: 999;
       padding: 0;
       transform: translateX(-100%);
-      transition: transform 0.3s ease-in;
+      transition: transform 0.3s ease-in-out;
 
       &__container{
         min-height: rem(300);
