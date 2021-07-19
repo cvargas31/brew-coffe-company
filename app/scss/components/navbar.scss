@@ -60,6 +60,12 @@
   margin-top: rem(16);
   margin-bottom: rem(16);
 
+  &__container{
+    @media screen and (max-width:769px) {
+      display: none;
+    }
+  }
+
   &__logo {
     img {
       height: rem(80);
@@ -84,6 +90,80 @@
 
     &:hover {
       color: var(--gold);
+    }
+  }
+
+
+  &__mobile{
+
+    margin: 0 rem(10);
+
+    @media screen and (min-width: 770px) {
+      display: none;
+    }
+
+    &__logo{
+      img{
+        height: 80px;
+      }
+    }
+
+    &__nav-links{
+      align-items: center;
+      background-color: #fff;
+      height: 86vh;
+      position: absolute;
+      left: 0;
+      top: 10vh;
+      width: 50%;
+      z-index: 999;
+      padding: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in;
+
+      &__container{
+        min-height: rem(300);
+        top: 0;
+        position: absolute;
+
+        li {
+          list-style: none;
+          opacity: 0;
+          font-weight: 500;
+          letter-spacing: rem(1.3);
+          text-transform: uppercase ;
+        }
+
+      }
+
+    }
+
+    &__burger{
+      position: absolute;
+      left: 25px;
+      cursor: pointer;
+
+      div {
+        width: rem(25);
+        height: rem(3);
+        margin: rem(5);
+        background-color: var(--gold);
+      }
+    }
+
+    .nav-active{
+      transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+      from{
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to{
+        opacity: 1;
+        transform: translateX(0px);
+      }
     }
   }
 }
